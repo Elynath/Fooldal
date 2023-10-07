@@ -1,0 +1,110 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {background-image: url(https://media.tenor.com/9jUvUp69cYMAAAAd/lich-king-snow.gif);
+    background-size: cover;
+
+    height: 100vh;
+    padding: 0%;
+    margin: 0%; }
+
+
+
+ .container {
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px;
+}
+div#reaper{
+    float: right;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    background-color: white;
+}
+nav a:hover {
+    background-color: white;
+}
+
+h1{
+        color: blue;
+        text-align: center;
+        padding-bottom: 20px;
+}
+h2 {
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+}
+
+#content {
+    overflow: auto;
+    padding: 20px 8px;
+}
+
+#content img {
+    float: right;
+    width: 30%;
+    margin-left: 10px;
+}
+
+#content p {
+    color: #555;
+    text-align: justify;
+    hyphens: auto;
+    font-size: medium;
+}
+
+#content p::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+div#pestis img {
+    height: auto;
+}
+
+div#content image{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+q{
+    color: red;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 0 3px 0 3px;
+    color: white;
+}
