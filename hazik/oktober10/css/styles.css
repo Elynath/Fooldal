@@ -54,7 +54,13 @@ a:hover{
 nav a:hover {
     background-color: white;
 }
+video{
 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
 h1{
         color: blue;
         text-align: center;
