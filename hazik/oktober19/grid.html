@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="discription"
+      content="Ha többet szeretnél megtudni Magyarország azon tavairól ahol üdülhetsz akkor látogass el az oldalunkra."
+    />
+    <link rel="stylesheet" href="css/grid.css" />
+    <title>Üdüljön kedve szerint</title>
+  </head>
+  <body>
+    <div class="content">
+      <header></header>
+      <nav>
+        <a href="#balaton"><u>Balaton</u></a>
+        <a href="#tisza"><u>Tisza-tó</u></a>
+        <a href="#szelidi"><u>Szelidi-tó</u></a>
+      </nav>
+      <aside>
+        <h2 id="urlap">Kérem töltse ki az űrlapot!</h2>
+        <form>
+          <div>
+            <label for="name" id="name"><b>Teljes név</b></label>
+            <input type="text" id="name" placeholder="Ide írd a neved" />
+          </div>
+          <div>
+            <label fore="e-mail" id="e-mail"><b>E-mail cím</b></label>
+            <input
+              type="email"
+              id="e-mail"
+              placeholder="pelda.email@gmail.com"
+              size="25px"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div>
+            <label fore="telefon" id="telefon"><b>Telefonszám</b></label>
+            <input
+              type="tel"
+              id="telefon"
+              size="25px"
+              placeholder="06301234567"
+              maxlength="11"
+              required
+            />
+          </div>
+          <div>
+            <h4>Melyik tó érdekli?</h4>
+            <select name="tavak" id="tavak">
+              <option value="balaton">Balaton</option>
+              <option value="tisza-to">Tiszta-tó</option>
+              <option value="szelidi-to">Szelidi-tó</option>
+            </select>
+          </div>
+          <div id="szallas">
+            <h4>Milyen szállást keres?</h4>
+            <input type="checkbox" id="szalloda" />
+            <label for="szalloda">Szálloda</label>
+            <br />
+            <input type="checkbox" id="fel-panzio" />
+            <label for="fel-panzio">Fél panzió</label> <br />
+            <input type="checkbox" id="kemping" />
+            <label for="kemping">Kemping</label>
+          </div>
+
+          <div id="ellatas">
+            <h4>Milyen ellátás legyen?</h4>
+            <input type="radio" id="teljes" name="ellatas" />
+            <label for="teljes">Teljes</label> <br />
+            <input type="radio" id="fel" name="ellatas" />
+            <label for="fel">Fél panzió</label> <br />
+            <input type="radio" id="reggeli" name="ellatas" />
+            <label for="reggeli">Csak reggeli</label>
+          </div>
+          <div>
+            <h4>Egyéb üzenet</h4>
+            <textarea name="uzenet" id="uzenet" cols="30" rows="10"></textarea>
+          </div>
+          <div><button>Küldés</button></div>
+        </form>
+      </aside>
+      <section id="sc_one">
+        <h3 id="balaton">Balaton</h3>
+        <img src="balaton.jpg" alt="egy kép a Balatonról" />
+        <p>
+            Típusa geológiailag a Velencei-tóhoz hasonlóan tektonikus eredetű,
+            sekély vizű ároktó. 77 km hosszú, legkisebb szélessége Tihanynál 1,3
+            km, legnagyobb 12,7 km Balatonvilágos és Balatonalmádi között, átlagos
+            szélessége 7,7 km, felülete 600 km². Legmélyebb pontja a
+            Tihanyi-szoros legmélyebb árkában az úgynevezett a „Tihanyi-kút”, ahol
+            a tó medre 11-12,5 méter mélyen van. Más forrás szerint a kút mélysége
+            10,67 méter. A Szántód-Tihany kompjárat útvonalától mintegy 100-150
+            méterre keletre, a parttól körülbelül 300 méterre van.Az 59 800 hektár
+            területen fekvő vizes élőhely keleti medencéjét a Tihanyi-félsziget
+            választja el a tó többi részétől. Déli partjánál medre sekélyebb.
+            Északi oldalán található a badacsonyi borvidék és a Tapolcai-medence,
+            jellegzetes vulkáni tanúhegyeivel. A Balaton és környéke Budapest
+            mellett az ország turisztikailag leglátogatottabb területe, 2004-ben
+            elnyerte az Örökségünk – Somogyország Kincse címet is. Környékén
+            gyógyfürdők, termálforrások találhatók. A „Balaton fővárosa” címet
+            hivatalosan Keszthely viseli, de Siófok a déli part, Balatonfüred
+            pedig az északi part fővárosaként tekint magára. A tó környékét a
+            közigazgatási széttagoltság jellemzi, mert három megyéhez, három
+            tervezési-statisztikai régióhoz tartozik.
+        </p>
+      </section>
+
+      <section id="sc_two">
+        <h3 id="tisza">Tisza-tó</h3>
+        <img src="tiszato.jpg" alt="egy kép a Tisza-tó-ról" />
+        <p>
+            Az Alföld északi részén, Heves megye délkeleti szélén,
+            Borsod-Abaúj-Zemplén, Heves és Jász-Nagykun-Szolnok megye határán
+            fekszik. Területe 127 km², melyen mozaikosan váltakoznak a nyílt
+            vízfelületek, szigetek, holtágak, sekély csatornák. Hossza  27
+            kilométer, átlagos mélysége 1,3 méter; a legmélyebb pontján azonban 17
+            méter mély. 43 km²-nyi sziget található benne. A Tisza-tó közúti
+            megközelítése tulajdonképpen nem egyszerű, mert a térségében húzódó
+            főutak jobbára messze elkerülik; ez alól az egyetlen kivétel a 33-as
+            főút, mely nemcsak, hogy érinti, de keresztül
+            is szeli a tavat, Poroszló és Tiszafüred között. A tó
+             bal partján fekvő települések között a
+            Tiszaroff-Tiszafüred közti 3216-os húzódik végig, a jobb part
+            községeit a 3213-as út köti össze; a tó északi oldalán fekvő
+            települések megközelítési és összekötő útjai a 3301-es és a 3302-es
+            utak, a két part közti átjárást pedig a 33-as főúton felül még egy út
+            biztosítja: ez a 3209-es, mely Kiskörénél szeli át a Tiszát.
+        </p>
+      </section>
+      <section id="sc_three">
+        <h3 id="szelidi">Szelidi-tó</h3>
+        <img src="szelidi.jpg" alt="egy kép a Szelidi-tó-ról" />
+        <p>
+            Szelid neve a közeli Várdomb erõdítményével és a török idõk harcaival
+            függhet össze, ugyanis a török csapatok a magyar túlerõt látva,
+            megállásra és kompromisszumokra kényszerültek "megszelidültek" ezen a
+            területen. A tavat a még a Duna vize mélyített ki évezredekkel
+            ezelõtt. Jelenleg 4km hosszú, szélessége átlagosan 150-200m között
+            mozog, átlagos vízmélysége 3-4 méter, vize nyáron akár 28°C-ra is
+            felmelegedhet, így fürdõzésre kiválóan alkalmas. A talajból sok
+            nátrium-magnézium-karbonát és nátrium-jodid oldódik ki, ezért már a
+            középkorban sebgyógyításra használták, ma inkább idegrendszeri,
+            hormonális és reumatikus bántalmak kezelésére ajánlják. Vize szagtalan
+            a gyógyfürdõkkel ellentétben, jelenleg még nem minõsített gyógyvíz,
+            ezért üdülõfalu létesült a környezetében. Egy másik legenda szerint
+            Bence vitéz úgy meghajszolta lovait hogy azok patái elvástak. De
+            miután a lovak hosszasan a tó vizében állva ittak sebeik gyorsan
+            rendbe jöttek. Szeliden 2000-ben újították fel a Kastély Szállót, a
+            jövõbeni tervek szerint gyógykezelésekre alkalmas létesítményeket is
+            létrehoznak benne. A kastély egykoriban a kalocsai érsek pihenõ
+            kastélya volt.
+        </p>
+      </section>
+
+      <footer>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349096.440354742!2d17.679177364399127!3d46.87670510263135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769956da86885a3%3A0x730e7eaccdcb2779!2sBalaton!5e0!3m2!1shu!2shu!4v1697378063568!5m2!1shu!2shu"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      </footer>
+    </div>
+  </body>
+</html>
