@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfejlesztés gyakorlása</title>
+</head>
+<body>
+    <script>
+
+        // 1.//
+        let name = "Bence";
+        console.log(name);
+         name = "Kevin";
+        console.log(name);
+
+        // 2.//
+        const PI = 3.14159;
+        console.log(PI);
+
+        
+        let nev = 'Bence';
+        let greet = 'Szia';
+
+        let whole = 10;
+        let decimal = 2.25;
+
+        let inStock = true;
+        let outStock = false;
+
+        // 3.//
+        let person = {
+            name: 'Bence',
+            age: 24,
+            city: 'Nagykanizsa',
+        };
+
+        // 4.//
+        let someVariable = null;
+        console.log(someVariable)
+        let variable;
+        console.log(variable);
+
+        // 5.//
+        let a = 10;
+        let b = 7;
+        let add = a + b;
+        let sub = a - b;
+
+
+        let x = 8;
+        let y = 2;
+        let multi = x * y;
+        let div = x / y;
+
+
+        let c = 15;
+        let d = 2;
+        let mod = c % d;
+
+
+        let combined = 10 + 5 * 2;
+        let bracketed = (10 + 5) * 2;
+
+        // 6.//
+
+        alert('Üdvözlünk a weboldalunkon!');
+        
+        let userName = prompt('Hogy hívnak?');
+        alert ('Üdvözöljük, ' + userName + '!');
+
+        console.log('Érezd jól magad az oldalunkon');
+        console.log(userName);
+
+        alert('Figyelem: A farhát 15 %-os kedvezménnyel kapható a húspultban!');
+
+        // 7.//
+
+        let kor = prompt('Milyen idős vagy?');
+        if  (parseInt(kor) >=18 ){
+            alert('A játék elérhető az Ön számára');
+            
+        }
+        else {
+            alert ( 'Sajnáljuk, a játék csak 18 éven felüliek számára elérhető.');
+            
+        }
+
+        // 8. //
+
+        let szam1 = 5;
+        let szam2 = 20;
+        let sum = szam1 + szam2;
+        console.log('A két szám összege: ' + sum);
+        
+
+
+
+    </script>
+</body>
+</html>
