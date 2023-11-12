@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Képgaléria</title>
+    <script>
+        $(document).ready(function() {
+            // Előtöltő funkció
+            function preloadImages() {
+                $(".gallery img").each(function() {
+                    var img = new Image();
+                    img.src = $(this).attr("src");
+                });
+            }
+
+            preloadImages(); // Előtöltés az oldal betöltésekor
+
+            var currentImageIndex = 0;
+            var totalImages = $(".gallery img").length;
+
+            $(".gallery img").click(function() {
+                currentImageIndex = $(this).index();
+                updateLightboxContent();
+                $(".lightbox").fadeIn();
+            });
+
+            $(".lightbox, .close-button, .nav-arrow").on("click", function(event) {
+                event.stopPropagation();
+                var targetClass = $(event.target).attr("class");
+
+                if (targetClass === "lightbox" || targetClass === "close-button") {
+                    $(".lightbox").fadeOut();
+                } else if (targetClass.includes("nav-arrow")) {
+                    var direction = targetClass.includes("prev") ? -1 : 1;
+                    navigate(direction);
+                }
+            });
+
+            function navigate(direction) {
+                currentImageIndex += direction;
+
+                if (currentImageIndex < 0) {
+                    currentImageIndex = totalImages - 1;
+                } else if (currentImageIndex >= totalImages) {
+                    currentImageIndex = 0;
+                }
+
+                updateLightboxContent();
+            }
+
+            function updateLightboxContent() {
+                var imgSrc = $(".gallery img").eq(currentImageIndex).attr("src");
+                $(".lightbox img").attr("src", imgSrc);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="gallery">
+        <img src="car.jpeg" alt="autó">
+        <img src="cat.jpg" alt="vadmacska">
+        <img src="fa.jpg" alt="fa">
+    </div>
+    <div class="lightbox">
+        <span class="nav-arrow prev">&#8249;</span>
+        <div class="lightbox-content">
+            <span class="close-button">&#10006;</span>
+            <img src="" alt="Nagyított kép">
+        </div>
+        <span class="nav-arrow next">&#8250;</span>
+    </div>
+</body>
+</html>
