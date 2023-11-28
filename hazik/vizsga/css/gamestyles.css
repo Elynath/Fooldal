@@ -29,7 +29,7 @@ body {
 
 header {
     flex-basis: 100%; 
-    background-image: url(/img/ps.jpg);
+    background-image: url(../img/ps.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50%;
