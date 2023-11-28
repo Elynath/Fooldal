@@ -406,7 +406,8 @@ img{
 footer{
   text-align: center;
   display: block;
-  background-color: white;
+  background-color: rgba(102, 106, 129, 0.5);
+  border-radius: 10px;
 
 }
 
