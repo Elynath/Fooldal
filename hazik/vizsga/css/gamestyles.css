@@ -51,7 +51,7 @@ a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    background-color: white;
+    color:white;
     font-size: 20px;
     margin: 5px; 
 }
@@ -392,10 +392,10 @@ footer iframe{
         padding: 100px; 
     }
 
-    nav, aside {
+    nav, aside, a {
         flex-basis: 100%;
+        
     }
-
     #name, #e-mail, #telefon {
         width: 100%;
     }
