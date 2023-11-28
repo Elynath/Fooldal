@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +51,7 @@ a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    background-color: white;
+    color:white;
     font-size: 20px;
     margin: 5px; 
 }
@@ -236,16 +237,15 @@ div.face.front img {
     float: right;
     clear: both;
 }
+#sc_two {
+    grid-column: 2/8;
+    background-color: #212c58;;
+}
 #sc_one p {
     padding: 40px 10px 10px 10px;
     text-align: justify;
     color: #f3f3f3;
 }
-#sc_two {
-    grid-column: 2/8;
-    background-color: #212c58;;
-}
-
 #sc_two p {
     padding: 40px 10px 10px 10px;
     text-align: justify;
@@ -339,6 +339,16 @@ img#dbdimg{
     margin-left: 30px;
 }
 
+footer iframe{
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}
 
 @media screen and (max-width:1024px) {
     .content {
@@ -382,10 +392,10 @@ img#dbdimg{
         padding: 100px; 
     }
 
-    nav, aside {
+    nav, aside, a {
         flex-basis: 100%;
+        
     }
-
     #name, #e-mail, #telefon {
         width: 100%;
     }
@@ -425,15 +435,4 @@ img#dbdimg{
     footer iframe {
         margin: 0;
     }
-}
-
-footer iframe{
-    border-radius: 20px;
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    padding: 0 auto;
-    position: relative;
-    overflow: hidden;
-    display:flex;
 }
