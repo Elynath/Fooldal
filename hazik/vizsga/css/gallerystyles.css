@@ -61,8 +61,7 @@ div.content {
 
 section {
     grid-column: 1/7;
-    border: 2px solid black;
-    border-radius: 10px;
+    
     
 }
 
@@ -79,9 +78,8 @@ h1 {
     padding-bottom: 40px;
     color: rgb(181, 3, 3);
     padding: 15px;
-    background: rgb(95, 123, 160);
-    border: 1px solid white;
-    border-radius: 3px;
+    
+    
     font-weight: bolder;
     
     
@@ -91,9 +89,8 @@ h2{
     padding-bottom: 40px;
     color: rgb(181, 3, 3);
     padding: 15px;
-    background: rgb(95, 123, 160);
-    border: 1px solid white;
-    border-radius: 3px;
+    
+    
     font-weight: bold;
     justify-content: center;
     margin-top:10px;
@@ -120,7 +117,7 @@ a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    background-color: rgb(95, 123, 160);
+    
     font-size: 20px;
     color: rgb(181, 3, 3);
 }
