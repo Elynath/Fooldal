@@ -691,13 +691,7 @@ i#predator.fa-sharp.fa-solid.fa-star.fa-beat, i#predator.fa-regular.fa-star.fa-b
         width: 100%;
     }
 
-    .games h3,
-    .games .wrapper::before,
-    .games .wrapper::after,
-    .games .title,
-    .games .character {
-        position: static;
-    }
+    
 
     .games .character {
         
