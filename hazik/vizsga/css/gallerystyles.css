@@ -661,27 +661,69 @@ i#predator.fa-sharp.fa-solid.fa-star.fa-beat, i#predator.fa-regular.fa-star.fa-b
     color: black;
 }
 
-@media screen and (max-width:1024px) {
+@media (max-width: 768px) {
     .content {
-        width: 100%;
-        background-color: #101320;
+        grid-template-columns: 1fr;
     }
 
-    img {
+    h1,
+    h2,
+    header,
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        float: none;
+        display: inline-block;
+    }
+
+    .games,
+    .secmovies {
+        grid-column: 1 / -1;
+    }
+
+    .games h3,
+    .wrapper::before,
+    .wrapper::after,
+    .title,
+    .character {
         width: 100%;
     }
 
-    h2 {
-        padding-top: 35px;
+    .games h3,
+    .games .wrapper::before,
+    .games .wrapper::after,
+    .games .title,
+    .games .character {
+        position: static;
     }
-    
+
+    .games .character {
         
+        transform: none;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+        float: none;
+        clear: both;
+    }
+
+    .poster::before {
+        bottom: -180px;
+    }
+
     
-    #sc_one,
-    #sc_two,
-    #sc_three {
-        grid-column: 1/7;
-        grid-row: 4/7;
+
+    .card .details .info {
+        margin-top: 10px;
+    }
+
+    .caption {
+        top: -30px;
     }
 
 }
