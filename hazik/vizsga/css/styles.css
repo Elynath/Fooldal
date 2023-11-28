@@ -412,4 +412,27 @@ footer{
 }
 
 
+@media (max-width: 768px) {
+  .content {
+      grid-template-columns: 1fr;
+  }
+
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+
+  #name,
+  #choose,
+  #games,
+  .movies,
+  .gallery {
+      grid-column: 1 / -1;
+  }
+}
+
 
