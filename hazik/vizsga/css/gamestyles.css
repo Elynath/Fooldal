@@ -21,7 +21,7 @@ body {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: flex-start; 
-    background-color: #FFF;
+    background-color: #212c58;
     border-radius: 10px;
 }
 
@@ -52,7 +52,7 @@ a {
     padding: 10px;
     background-color: white;
     font-size: 20px;
-    margin: 5px; /* Added margin for spacing */
+    margin: 5px; 
 }
 
 a:hover {
@@ -63,9 +63,9 @@ a:hover {
 aside {
     border: 2px solid black;
     border-radius: 10px;
-    flex-basis: calc(20% - 10px); /* A "40%" az eredeti flex-basis, a "-10px" a gap mérete */
+    flex-basis: calc(20% - 10px); 
     background-color: #5B9BD5;
-    max-height: 80vh;
+    max-height: 85vh;
 }
 
 div {
@@ -145,9 +145,8 @@ h4 {
 
 section {
     
-        flex-basis: calc(80% - 10px); /* A "60%" az eredeti flex-basis, a "-10px" a gap mérete */
-        border: 2px solid black;
-        border-radius: 10px;
+        flex-basis: calc(80% - 10px); 
+        
     
 }
 
@@ -239,38 +238,45 @@ div.face.front img {
 }
 #sc_two {
     grid-column: 2/8;
-    background-color: #FFF;
+    background-color: #212c58;;
 }
-
+#sc_one p {
+    padding: 40px 10px 10px 10px;
+    text-align: justify;
+    color: #f3f3f3;
+}
 #sc_two p {
     padding: 40px 10px 10px 10px;
     text-align: justify;
+    color: #f3f3f3;
 }
 
 #sc_three {
     grid-column: 2/8;
-    background-color: #FFF;
+    background-color: #212c58;;
 }
 
 #sc_three p {
     padding: 30px 10px 10px 10px;
     text-align: justify;
+    color: #f3f3f3;
 }
 
 #sc_four {
     grid-column: 2/8;
-    background-color: #FFF;
+    background-color: #212c58;;
 }
 
 #sc_four p {
     padding: 30px 10px 10px 10px;
     text-align: justify;
     clear: both;
+    color: #f3f3f3;
     
 }
 #sc_five {
     grid-column: 2/8;
-    background-color: #FFF;
+    background-color: #212c58;;
 }
 
 #sc_five #wh40k {
@@ -282,6 +288,7 @@ div.face.front img {
     text-align: justify;
     float: left;
     clear: both;
+    color: #f3f3f3;
 }
 
 h3 {
