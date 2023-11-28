@@ -343,7 +343,7 @@ img#dbdimg{
 @media screen and (max-width:1024px) {
     .content {
         width: 100%;
-        background-color: #FFF;
+        background-color: #212c58;
     }
 
     img {
@@ -369,6 +369,62 @@ img#dbdimg{
     }
 
     
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 100px; 
+    }
+
+    nav, aside {
+        flex-basis: 100%;
+    }
+
+    #name, #e-mail, #telefon {
+        width: 100%;
+    }
+
+    input#name {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    video {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    p{
+        text-align: justify;
+        width: 100%;
+    }
+
+    p#video {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer iframe {
+        margin: 0;
+    }
 }
 
 footer iframe{
