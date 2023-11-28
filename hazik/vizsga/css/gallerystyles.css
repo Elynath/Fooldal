@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #191c29;
+    font-family: Agbalumo;
+    
+}
+
+body {
+    font-family: "Agbalumo";
+    display: grid;
+    perspective: 1000px;
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     justify-content: center;
+      align-items: center;
+      background: #191c29;
+}
+
+  
+
+content {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+div.content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+            "header header header header"
+            "nav main main main "
+            "aside main main main "
+            "section section section section "
+            "section section section section "
+            "footer footer footer footer"
+            
+    ;
+}
+
+section {
+    grid-column: 1/7;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.secmovies{
+    margin-top: 15px;
+    grid-column: 1/7;
+    grid-row: 4/7;
+    background: none;
+
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(181, 3, 3);
+    padding: 15px;
+    background: rgb(95, 123, 160);
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: bolder;
+    
+    
+}
+h2{
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(181, 3, 3);
+    padding: 15px;
+    background: rgb(95, 123, 160);
+    border: 1px solid white;
+    border-radius: 3px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top:10px;
+}
+header {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    grid-column: 1/7;
+}
+nav {
+    width: auto;
+    margin: 0 auto;
+    grid-column: 1/7;
+    text-align: center;
+    
+   
+}
+
+a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: rgb(95, 123, 160);
+    font-size: 20px;
+    color: rgb(181, 3, 3);
+}
+
+a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+img.cover-image{
+    height: 20vh;
+}
+
+img.character{
+    height: fit-content;
+}
+
+div.card{
+    margin: 5px 5px 5px 5px;
+}
+
+
+
+  .games {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: grid;
+    grid-column: 1/7;
+    grid-row: 3/8;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    padding: 0px ;
+    perspective: 2500px;
+    margin-left: 10px;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    
+  }
+
+img#edward.character{
+    height: 100%;
+}
+
+img#lee.character{
+    height: 120%;
+}
+
+img#arthur.character{
+    height: 120%;
+}
+
+img#joker.character{
+    height: 150%;
+}
+h3{
+    text-align: center;
+    padding: 15px 0 10px 0;
+    clear: both;
+    float: left;
+}
+
+.games h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    color: #ffffff;
+    background-color: black;
+    font-family: fantasy;
+    font-weight: lighter;
+}
+  
+  .games:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  .wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  .wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .games:hover .wrapper::before,
+  .wrapper::after {
+    opacity: 1;
+  }
+  
+  .games:hover .wrapper::after {
+    height: 120px;
+  }
+  .title {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .games:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+  }
+  
+  .character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .games:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+
+
+
+
+div.card
+  {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  }
+
+div.card .poster{
+    position: relative;
+    overflow: hidden;
+}
+div.card .poster::before{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#370c70 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+}
+
+div.card:hover .poster::before{
+    bottom: 0px;
+}
+.card .poster img{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.card:hover .poster img{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+.details{
+    position: absolute;
+    bottom: -230px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    
+}
+
+.card:hover .details
+{
+    bottom: 0px;
+}
+
+.logo{
+    max-width: 180px;
+    
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.rating{
+    position: relative;
+    padding: 5px 0;
+    float: left;
+    clear: both;
+}
+
+i{
+    color: #f7f406;
+    font-size: 1em;
+    float: left;
+    
+
+}
+
+.rating span{
+    color: #fff;
+    margin-left: 5px;
+}
+
+.tags{
+    position: relative;
+    margin-top: 5px;
+}
+
+.tags span {
+    padding: 2px 5px;
+    color:#fff;
+    background: #0c3244;
+    border-radius: 4px;
+    float: left;
+    clear: both;
+    display: block;
+    
+}
+
+.tags span:nth-child(2){
+    background: #ff5722;
+}
+
+.card .details .info{
+    color: #fff;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+
+.cast{
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+.cast h4{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.cast ul{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.cast ul li{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+
+.cast ul li img{
+    max-width: 100%;
+
+}
+
+div.card #lotr.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#757436 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+.caption {
+    position: absolute;
+    top: -30px; /* A felirat helye az egér felett */
+    left: 50%; /* A felirat pozíciója a középpontban */
+    transform: translateX(-50%); /* A felirat középre igazítása */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: auto;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    user-select: none;
+  }
+
+li:hover .caption {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .image-item:not(:hover) .caption {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+  div.card #hp.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#466068 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+div.card #jw.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#172225 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+div.card #km.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#9c891e 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+div.card #midway.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(36, 70, 121) 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+div.card #irish.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(93, 110, 136) 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+
+}
+
+div.card #predator.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(176, 185, 199) 50%, transparent);
+    transition: 0.5s;
+    z-index:1;
+    
+
+}
+
+.card .details #predator.info  {
+    color: black;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+
+h4#predator{
+    color: black;
+}
+
+h3#predator{
+    color: black;
+}
+
+span#predator{
+    color: black;
+}
+
+div.card #pope.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(197, 47, 47), transparent);
+    transition: 0.5s;
+    z-index:1;
+    
+
+}
+
+h4#pope{
+    color: black;
+}
+
+h3#pope{
+    color: black;
+}
+
+span#pope{
+    color: black;
+}
+
+div#pope.info {
+    color:black
+}
+
+
+div.card #wow.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(131, 37, 37), transparent);
+    transition: 0.5s;
+    z-index:1;
+    
+
+}
+
+h4#wow{
+    color: black;
+}
+
+h3#wow{
+    color: black;
+}
+
+span#wow{
+    color: black;
+}
+
+div#wow.info {
+    color:black
+}
+
+
+div.card #avatar.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#1064a6, transparent);
+    transition: 0.5s;
+    z-index:1;
+    
+
+}
+
+div.card #dog.poster::before{
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,#cdd3d8, transparent);
+    transition: 0.5s;
+    z-index:1;
+    
+
+}
+
+h4#dog{
+    color: black;
+}
+
+h3#dog{
+    color: black;
+}
+
+span#dog{
+    color: black;
+}
+
+div#dog.info {
+    color:black
+}
+
+i#dog.fa-sharp.fa-solid.fa-star.fa-beat, i#dog.fa-regular.fa-star.fa-beat {
+    color: black;
+}
+
+i#predator.fa-sharp.fa-solid.fa-star.fa-beat, i#predator.fa-regular.fa-star.fa-beat, i#predator.fa-regular.fa-star-half-stroke.fa-beat {
+    color: black;
+}
+
+@media screen and (max-width:1024px) {
+    .content {
+        width: 100%;
+        background-color: #101320;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        padding-top: 35px;
+    }
+    
+        
+    
+    #sc_one,
+    #sc_two,
+    #sc_three {
+        grid-column: 1/7;
+        grid-row: 4/7;
+    }
+
+}

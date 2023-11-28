@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #191c29;
+    font-family: Agbalumo;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+
+
+header {
+    flex-basis: 100%; 
+    background-image: url(/img/ps.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    padding: 150px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    flex-basis: 100%; 
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    font-size: 20px;
+    margin: 5px; /* Added margin for spacing */
+}
+
+a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+aside {
+    border: 2px solid black;
+    border-radius: 10px;
+    flex-basis: calc(20% - 10px); /* A "40%" az eredeti flex-basis, a "-10px" a gap mérete */
+    background-color: #5B9BD5;
+    max-height: 80vh;
+}
+
+div {
+    padding: 5px;
+}
+
+div.content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+}
+
+#urlap {
+    padding: 5px;
+}
+
+div#gametype {
+    float: left;
+    clear: both;
+}
+
+#name,
+#e-mail,
+#telefon {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#name::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+#name:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+input#name {
+    width: 200px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100%;
+}
+
+#text {
+    float: left;
+    clear: both;
+}
+
+label b {
+    padding-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+    clear: both;
+}
+
+h4 {
+    padding-bottom: 5px;
+}
+
+section {
+    
+        flex-basis: calc(80% - 10px); /* A "60%" az eredeti flex-basis, a "-10px" a gap mérete */
+        border: 2px solid black;
+        border-radius: 10px;
+    
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    min-height: 500px;
+    float: left;
+    margin: 10px;
+    margin-left: 65px;
+}
+
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    color: #ffffff;
+    background-color: black;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: grid;
+    grid-column: auto;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: white;
+    text-align: center;
+    background: rgb(3, 35, 54);
+}
+.card .back h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+    text-align: center;
+    color: #D7B520;
+
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+div.face.front img {
+    border-radius: 0;
+    float: right;
+    clear: both;
+}
+#sc_two {
+    grid-column: 2/8;
+    background-color: white;
+}
+
+#sc_two p {
+    padding: 40px 10px 10px 10px;
+    text-align: justify;
+}
+
+#sc_three {
+    grid-column: 2/8;
+    background-color: white;
+}
+
+#sc_three p {
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+}
+
+#sc_four {
+    grid-column: 2/8;
+    background-color: white;
+}
+
+#sc_four p {
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+    clear: both;
+    
+}
+#sc_five {
+    grid-column: 2/8;
+    background-color: white;
+}
+
+#sc_five #wh40k {
+    
+    font-size: 10px;
+}
+#sc_five p {
+    padding: 30px 10px 10px 10px;
+    text-align: justify;
+    float: left;
+    clear: both;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px 0 10px 0;
+    clear: both;
+}
+
+video{
+    float: left;
+    clear: both;
+    position: relative;
+    margin-left: 140px
+}
+
+img {
+    width: 95%;
+    border-radius: 50%;
+    overflow: auto;
+    clear: both;
+    background-color: #191c29;
+    
+}
+
+p#video{
+    margin-left: 53vh;
+}
+
+p {
+    text-align: justify;
+    float: left;
+    clear: both;
+    font-family:fantasy;
+    font-size: 20px; 
+
+}
+
+footer {
+    grid-column: 1/5;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    background-color: #E7E6E6;
+}
+
+img#dbdimg{
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .content {
+        width: 100%;
+        background-color: #101320;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    h2 {
+        padding-top: 35px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        grid-row: 3/5;
+    }
+
+    video {
+        width: 60%;
+        margin-left: 70px;
+    }
+
+    
+}
+
+footer iframe{
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}

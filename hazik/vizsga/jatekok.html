@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gamestyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Érdekességek ikonikus videójáték karakterekről">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Videogames , Movies">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Vizsgamunka - Videójátékok</title>
+</head>
+
+<body>
+    <div class="content">
+        <header></header>
+        <nav><a href="#cod"><u>Call of Duty</u></a>
+            <a href="#wow"><u>World of Warcraft</u></a>
+            <a href="#gta"><u>Grand Theft Auto</u></a>
+            <a href="#dbd"><u>Dead by Daylight</u></a>
+            <a href="#wh"><u>Warhammer 40000</u></a>
+            <a href="index.html">Vissza a Főoldalra</a>
+        </nav>
+        <aside>
+            <h2 id="urlap">Kérlek töltsd ki az űrlapot és mond el a véleményed!</h2>
+
+            <form>
+                <div>
+                    <label for="name" id="name"><b>Teljes név</b></label>
+                    <input type="text" id="name" placeholder="Ide írd a neved" />
+                </div>
+                <div>
+                    <label fore="e-mail" id="e-mail"><b>E-mail cím</b></label>
+                    <input type="email" id="e-mail" placeholder="pelda.email@gmail.com" size="25px" maxlength="50"
+                        required />
+                </div>
+                <div>
+                    <label fore="telefon" id="telefon"><b>Telefonszám</b></label>
+                    <input type="tel" id="telefon" size="25px" placeholder="06301234567" maxlength="11" required />
+                </div>
+                <div id="game">
+                <h4>Melyik játék érdekli?</h4>
+                <select name="jatek" id="jatek">
+                    <option value="cod">Call of Duty</option>
+                    <option value="wow">World of Warcraft</option>
+                    <option value="gta">Grand Theft Auto</option>
+                    <option value="dbd">Dead by Daylight</option>
+                    <option value="wh">Warhammer 40000</option>
+                </select>
+            </div>
+                <div id="gametype">
+                    <h4>Melyik játéktípus érdekli?</h4>
+                    <input type="checkbox" id="singleplayer" />
+                    <label for="singleplayer">Egyjátékos</label>
+                    <br />
+                    <input type="checkbox" id="multiplayer" />
+                    <label for="multiplayer">Többjátékos</label> <br />
+                    <input type="checkbox" id="coop" />
+                    <label for="coop">Kooperatív</label> <br />
+                </div>
+                <div id="text">
+                <h4>Melyik játékról olvasnál szívesen? Írd le nekünk a véleményed!</h4>
+                <textarea name="uzenet" id="uzenet" cols="30" rows="10"></textarea>
+                </div>
+                <div><button>Küldés</button></div>
+            
+                <div>
+                    </form>
+                    </aside>
+                
+                    <section id="sc_one">
+                        <h3 id="cod">Call of Duty</h3>
+                        <img id=dbdimg src="img/cod.jpg" alt="Call of duty">
+                        <p>A Call of Duty egy belső nézetes lövöldözős videójáték-sorozat. A legtöbb rész a második világháborúban,
+                            a hidegháborúban, a modern időkben és a jövőben játszódik. Tulajdonosa és kiadója az Activision. Az
+                            Aspyr Media kizárólag Mac OS X-re adta ki.</p>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/cptprice.png" alt="">
+                                <h3>Cpt. Price</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Cpt. Price</h3>
+                                <p>Ő egy brit S.A.S. Kapitány és mesterlövész, aki később a 141-es harci különítményt alakította,
+                                    miután részt vett a második orosz polgárháborúban és a harmadik világháborúban..</p>
+                                <div class="link">
+                                    <a href="https://callofduty.fandom.com/wiki/John_Price" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/ghost.png" alt="">
+                                <h3>Simon 'Ghost' Riley</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Simon 'Ghost' Riley</h3>
+                                <p>Simon "Ghost" Riley hadnagy a brit különleges erők operátora, és a Task Force 141 kiemelkedő
+                                    tagja, ikonikus koponyamintás maszkjáról, fejhallgatójáról és sötétvörös napszemüvegéről
+                                    ismert.</p>
+                                <div class="link">
+                                    <a href="https://callofduty.fandom.com/wiki/Simon_%22Ghost%22_Riley"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/soap.jpg" alt="">
+                                <h3>John 'Soap' MacTavish</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>John 'Soap' MacTavish</h3>
+                                <p>Fontos szerepet játszott az ultranacionalista válság idején, újonc volt a brit különleges
+                                    légiszolgálatnál, és tagja volt Price kapitány Bravo csapatának.</p>
+                                <div class="link">
+                                    <a href="https://callofduty.fandom.com/wiki/John_%22Soap%22_MacTavish"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                    
+                    <sec id="sc_two">
+                        <h3 id="wow">World of Warcraft</h3>
+                        <img id=dbdimg src="img/wow.jpg" alt="World of Warcraft">
+                        <p>A World of Warcraft a Blizzard Entertainment 2004-ben megjelent számítógépes játéka. A Battle.net hálózat
+                            része. A nagy sikerű Warcraft sorozat történetét folytatja, pontosan két évvel a Warcraft III: The
+                            Frozen Throne eseményei után kapcsolódik be a történetbe.
+            
+                        </p>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/arthas.jpg" alt="">
+                                <h3>Arthas Meethil</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Arthas Menethil</h3>
+                                <p>Arthas Menethil, Lordaeron koronahercege és az ezüstkéz lovagja II. Terenas Menethil király fia
+                                    és a trónörökös volt.</p>
+                                <div class="link">
+                                    <a href="https://wowpedia.fandom.com/wiki/Arthas_Menethil" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/thrall.jpg" alt="">
+                                <h3>Thrall</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Thrall</h3>
+                                <p>Thrall (születési nevén Go'el), Durotan és Draka fia, a helyreállított sámánista horda egykori
+                                    hadvezére, a kalimdori Durotar nemzet alapítója és a sámánok második hullámának egyike.</p>
+                                <div class="link">
+                                    <a href="https://wowpedia.fandom.com/wiki/Thrall" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/illidan.jpg" alt="">
+                                <h3>Illidan Stormrage</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Illidan Stormrage</h3>
+                                <p>Illidan Stormrage, az első a démonvadászok közül, az egykori magát Outland
+                                    Lordjának kikiáltó lordja, a Fekete Templom egykori uralkodója és az Illidari eredeti vezetője.
+                                </p>
+                                <div class="link">
+                                    <a href="https://wowpedia.fandom.com/wiki/Illidan_Stormrage" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                    </sec>
+                    <sec id="sc_three">
+                        <h3 id="gta">Grand Theft Auto</h3>
+                        <img id=dbdimg src="img/gta.jpg" alt="Grand Theft Auto">
+                        <p>A Grand Theft Auto V egy akció-kaland videójáték, mely 2013. szeptember 17-én jelent meg PlayStation 3 és
+                            Xbox 360 konzolokra. Továbbfejlesztett változata Xbox One, PlayStation 4 platformokra 2014. november
+                            18-án érkezett meg, míg a PC-s verzió többszöri halasztás után 2015. április 14-én jelent meg.</p>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/franklin.jpg" alt="">
+                                <h3>Franklin Clinton</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Franklin Clinton</h3>
+                                <p>Valamikor fiatalkorában, kezdett el élni egy bandában, és kábítószer-kereskedelemmel
+                                    foglalkozott, mindazonáltal hamar letartóztatták.</p>
+                                <div class="link">
+                                    <a href="https://gta.fandom.com/hu/wiki/Franklin_Clinton" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/michael.jpg" alt="">
+                                <h3>Michael de Santa</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Michael de Santa</h3>
+                                <p>Michael háttere pillanatnyilag ismeretlen, de azt mondták, hogy ő valahol a Keleti-partvidéken
+                                    élt, és valami történt vele fiatalkorában, amiért bankrabló lett, és éveken keresztül csinálta
+                                    és sikeresé vált a munkájában.</p>
+                                <div class="link">
+                                    <a href="https://gta.fandom.com/hu/wiki/Michael_De_Santa" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/trevor.png" alt="">
+                                <h3>Trevor Philips</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Trevor Philips</h3>
+                                <p>Trevor történetéről nem sokat lehet tudni, de valami pontnál fogva, a 90-es évek elején Trevor
+                                    pilótaként belépett a hadseregbe és a 90-es évek végén visszavonult (ekkorra ő a korai 30-as
+                                    éveiben volt).
+                                </p>
+                                <div class="link">
+                                    <a href="https://gta.fandom.com/hu/wiki/Trevor_Philips" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                    </sec>
+                    <sec id="sc_four">
+                        <h3 id="dbd">Dead by Daylight</h3>
+                        <img id=dbdimg src="img/dbd.jpg" alt="Dead by Daylight">
+                        <p>A Dead by Daylight egy online aszimmetrikus túlélési horrorjáték, amelyet a kanadai Behavior Interactive
+                            stúdió fejlesztett ki.</p>
+            
+            
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/myers.jpg" alt="">
+                                <h3>Michael Myers</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Michael Myers</h3>
+                                <p>Nem volt gondja azzal, hogy mások fájdalmát okozza. Ehelyett pontosan ez volt az, amit keresett.
+                                    De még az élet is kemény lehet azoknak, akiknek az elméje rémülettel van tele.</p>
+                                <div class="link">
+                                    <a href="https://deadbydaylight.fandom.com/wiki/Michael_Myers"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/ghostface.jpg" alt="">
+                                <h3>Danny Johnson</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Danny Johnson</h3>
+                                <p>Lehuppant egy nedves székbe, hogy olvasson. Ez a cikk jobb lenne, ha jó lenne – Roseville-ben
+                                    végzett munkája kiemelkedő volt. A SZELLEMARC ELTŰNIK 1993. június 18-án</p>
+                                <div class="link">
+                                    <a href="https://deadbydaylight.fandom.com/wiki/Danny_Johnson_alias_Jed_Olsen"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/tarhos.jpg" alt="">
+                                <h3>Tarhos Kovács</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Tarhos Kovács</h3>
+                                <p>Tarhos Kovács nem sokra emlékezett gyerekkorából, de amire emlékezett, az egész életét kergeti.
+                                    Eszébe jutott a falu kiáltása és sikolya.
+                                </p>
+                                <div class="link">
+                                    <a href="https://deadbydaylight.fandom.com/wiki/Tarhos_Kov%C3%A1cs"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <video controls>
+                            <source src="videos/dbd.mp4" type="video/mp4">
+                            A böngésződ nem támogatja a videó lejátszását.
+                          </video>
+                        
+                    </sec>
+                    <sec id="sc_five">
+                        <h3 id="wh">Warhammer 40000</h3>
+                        <img id=dbdimg src="img/wh.jpg" alt="Warhammer 40000">
+                        <p> A Games Workshop gazdag hátteret nyújt a Warhammer 40 000 univerzumában játszódó játékához. A játék
+                            minden egyes modellje a képzeletbeli háttérhez lett igazítva, majd időnként megújítva, de jó néhányszor
+                            már az is előfordult, hogy egy-egy modell többé már nem volt használható a szabályok adta keretek
+                            között. A következő cikk a jelenlegi háttértörténetet mutatja be és azon eseményekre hivatkozik, melyek
+                            a Warhammer 40 000 univerzumában történtek.
+            
+                            Minden dátum a Birodalmi Dátumrendszer szabályai szerint van megadva, melyben a dátumok megadása olyan 3
+                            számjeggyel történik, melyek az évszám utolsó 3 számjegyét jelentik, és aztán jön az ezres. Például
+                            345.M31 a 30345. évet jelenti.
+                            <b>A Warhammer 40k történetéről a könyvekben olvashatsz a leginkább többet. Ehhez tudnám ajánlani a Tuan kiadót.</a></b>
+                        </p>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/emperor.jpg" alt="">
+                                <h3>A Császár</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>A Császár</h3>
+                                <p>A Viszályok Korának vége felé a Császár terrai hadúrként emelkedett föl. Genetikailag módosított
+                                    harcosokat alkalmazva egyesítette a Föld egymással viaskodó frakcióit, majd a galaxis
+                                    visszahódítására kezdett terveket kovácsolni. Később ezek a harcosok lettek az első Űrgárdisták.
+                                    Ebben az időszakban hívták életre a primarchákat.
+                                </p>
+                                <div class="link">
+                                    <a href="https://hu.wikipedia.org/wiki/A_Warhammer_40_000-univerzum_t%C3%B6rt%C3%A9nete#A_Cs%C3%A1sz%C3%A1r_felemelked%C3%A9se"
+                                        target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/horus.jpg" alt="">
+                                <h3>Hórusz</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Hórusz</h3>
+                                <p>Hórusz, más néven Horus Lupercal, vagy egyszerűbben Lupercalnak hívták életében a Luna Wolves
+                                    Légiójának Astartesei, egyike volt annak a 20 genetikailag módosított primarchának, amelyet az
+                                    emberiség császára hozott létre saját DNS-ének megalapítása előtt, még a háború kezdete előtt.
+                                </p>
+                                <div class="link">
+                                    <a href="https://warhammer40k.fandom.com/wiki/Horus" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="face front">
+                                <img src="img/dorn.jpg" alt="">
+                                <h3>Dorn</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Dorn</h3>
+                                <p>Rogal Dorn, akit "The Vigilant", a "Terra Praetorianusa" és a "Randhatlan" néven ismertek,
+                                    génfiainak pedig a "Defiance" "falneve" volt az Imperial Fists Space Marine primarcha. Légió és
+                                    az Emberbirodalom történetének egyik legnagyobb hőse.
+                                </p>
+                                <div class="link">
+                                    <a href="https://warhammer40k.fandom.com/wiki/Rogal_Dorn" target="_blank">Részletesebben</a>
+                                </div>
+                            </div>
+                        </div>
+                    </sec>
+                </section>
+            </div>
+                
+
+    </div>
+    
+        
+
+        <footer>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10780.015510639883!2d19.0689758!3d47.5093157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc71045cfa71%3A0xc82ce7822574dab0!2zVHVhbiBLw7ZueXZraWFkw7Mga8O2bnl2ZXNib2x0amE!5e0!3m2!1shu!2shu!4v1699120458053!5m2!1shu!2shu"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </footer>
+    </div>
+</body>
+
+</html>

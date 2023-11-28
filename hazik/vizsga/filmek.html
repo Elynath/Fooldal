@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/moviestyles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Érdekességek ikonikus film karakterekről">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Videogames , Movies">
+  <link rel="icon" type="image/x-icon" href="/img/faviconmovie.ico">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title>Vizsgamunka - Filmek</title>
+</head>
+
+<body>
+  <div class="content">
+    <header></header>
+    <nav><a href="#avengers"><u>Bosszúállók</u></a>
+      <a href="#lotr"><u>Gyűrűk ura</u></a>
+      <a href="#hp"><u>Harry Potter</u></a>
+      <a href="#jw"><u>John Wick</u></a>
+      <a href="#sq"><u>Öngyilkos osztag</u></a>
+      <a href="index.html">Vissza a Főoldalra</a>
+    </nav>
+    <aside>
+      <h2 id="urlap">Kérlek töltsd ki az űrlapot és mond el a véleményed!</h2>
+
+      <form>
+        <div>
+          <label for="name" id="name"><b>Teljes név</b></label>
+          <input type="text" id="name" placeholder="Ide írd a neved" required />
+        </div>
+        <div>
+          <label fore="e-mail" id="e-mail"><b>E-mail cím</b></label>
+          <input type="email" id="e-mail" placeholder="pelda.email@gmail.com" size="25px" maxlength="50" required />
+        </div>
+        <div>
+          <label fore="telefon" id="telefon"><b>Telefonszám</b></label>
+          <input type="tel" id="telefon" size="25px" placeholder="06301234567" maxlength="11" required />
+        </div>
+        <h4>Melyik film kategória érdekli?</h4>
+        <select name="film" id="film">
+          <option value="horror">Horror</option>
+          <option value="action">Akció</option>
+          <option value="humor">Vígjáték</option>
+          <option value="scifi">Sci-fi</option>
+          <option value="krimi">Krimi</option>
+        </select>
+        <h4>Melyik filmről olvasnál szívesen? Írd le nekünk a véleményed!</h4>
+        <textarea name="uzenet" id="uzenet" cols="30" rows="10"></textarea>
+        <div><button>Küldés</button></div>
+        <div>
+      </form>
+    </aside>
+    <section id="sc_one">
+      <h3 id="avengers">Bosszúállók</h3>
+      <img id=dbdimg src="img/avengers.jpg" alt="Bosszúállók">
+      <p>A Bosszúállók (eredeti cím: Marvel’s The Avengers) 2012-ben bemutatott szuperhős-fantasy film. A történet
+        alapja a Marvel Comics képregénykiadó által 1963-ban kitalált Bosszú Angyalai nevű szuperhőscsapat. Főszereplők:
+        Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Tom
+        Hiddleston, Samuel L. Jackson. Magyarországon április 26-án került a mozikba. Promóciós anyagokon Marvel’s
+        Bosszúállók, Marvel: Bosszúállók és Bosszúállók a Marveltől címen is feltűntek. A film szereplői és cselekménye
+        a főszereplők korábbi önálló filmjein alapulnak, azoknak közvetlen folytatása.</p>
+      <div class="card">
+        <div class="face front">
+          <img src="img/Amerika-kap..jpeg" alt="">
+          <h3>Amerika kapitány</h3>
+        </div>
+        <div class="face back">
+          <h3>Amerika kapitány</h3>
+          <p>Amerika Kapitány eredetének és kapcsolatainak részletei folyamatosan változtak a képregények aranykora óta
+            egészen a modern korig.Amerika Kapitány kalandjai folyamatosan jelentek meg,
+            melyet csak egyetlen szünet szakított meg 1954-től 1964-ig.</p>
+          <div class="link">
+            <a href="https://hu.wikipedia.org/wiki/Amerika_Kapit%C3%A1ny#A_szerepl%C5%91_t%C3%B6rt%C3%A9nete"
+              target="_blank">Részletesebben</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="img/vasember.jpg" alt="">
+          <h3>Vasember</h3>
+        </div>
+        <div class="face back">
+          <h3>Vasember</h3>
+          <p>Anthony Edward Stark a milliárdos iparmágnás Howard és Maria Stark gyermeke. Howard Stark vállalata, a
+            Stark Művek az Egyesült Államok legnagyobbjai közé tartozott. Tony már fiatalan nagy érdeklődést mutatott a
+            gépészet iránt.</p>
+          <div class="link">
+            <a href="https://hu.wikipedia.org/wiki/Vasember_(k%C3%A9preg%C3%A9nyszerepl%C5%91)#Eredett%C3%B6rt%C3%A9net:_Megsz%C3%BCletik_Vasember"
+              target="_blank">Részletesebben</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="img/thor.jpg" alt="">
+          <h3>Thor</h3>
+        </div>
+        <div class="face back">
+          <h3>Thor</h3>
+          <p>A „hatalmas” Thor az amerikai képregény ezüstkorában, 1962-ben született meg. Ebben az időben a szuperhősök
+            népszerűsége ismét növekedni kezdett az olvasók körében. Thor első szereplése a Journey into Mystery című
+            sorozat 83. számában volt.</p>
+          <div class="link">
+            <a href="https://hu.wikipedia.org/wiki/Thor_(Marvel_Comics)#Megsz%C3%BClet%C3%A9se_a_k%C3%A9preg%C3%A9ny_ez%C3%BCstkor%C3%A1ban"
+              target="_blank">Részletesebben</a>
+          </div>
+        </div>
+      </div>
+
+
+      <sec id="sc_two">
+        <h3 id="lotr">Gyűrűk ura</h3>
+        <img id=dbdimg src="img/lotr.jpg" alt="Gyűrűk ura">
+        <p>Frodó (Elijah Wood), az ifjú hobbit egy gyűrűt kap Bilbótól, amiről kiderül, hogy az Egy Gyűrű, mellyel a
+          Sötétség Ura rabszolgasorba taszíthatja Középfölde népeit. Gandalf (Ian McKellen) Völgyzugolyba küldi Frodót,
+          ahol a tündék legbölcsebb vezetője, Elrond dönt a gyűrű sorsáról. Nincs más lehetőség, a gyűrűt el kell
+          pusztítani Mordorban, a Végzet-katlanban. A szabadnépek tanácsán megújul a Szövetség, és Gandalf vezetésével
+          Frodó és társai, a dúnadán Aragorn (Viggo Mortensen), a tünde Legolas (Orlando Bloom), Gimli, a törp (John
+          Rhys-Davies), és Boromir, az emberek képviseletében, nekivágnak a reménytelen küldetésnek. A jövő attól függ,
+          hogyan alakul a szövetség sorsa.
+
+        </p>
+        <div class="card">
+          <div class="face front">
+            <img src="img/aragorn.jpg" alt="">
+            <h3>Aragorn</h3>
+          </div>
+          <div class="face back">
+            <h3>Aragorn</h3>
+            <p>Aragorn Hk. 2931. március 1-jén született II. Arathorn és Gilraen fiaként. Még csak kétéves volt, amikor
+              apja kilovagolt az orkok ellen, és elesett egy ork nyíltól.
+              Ekkor Aragornt anyja Völgyzugolyba, Elrond házába vitte, hogy ott nevelkedjen..</p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Aragorn#%C3%89lete" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/legolas.jpg" alt="">
+            <h3>Legolas</h3>
+          </div>
+          <div class="face back">
+            <h3>Legolas</h3>
+            <p>Legolas apját, Thranduil királyt, képviselve érkezett Völgyzugolyba, és vett részt a Tanácson, ahol
+              elmondta, hogy a népére bízott Gollam, valószínűleg ork segítséggel, megszökött...</p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Legolas#%C3%89lete" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/gimli.jpg" alt="">
+            <h3>Gimli</h3>
+          </div>
+          <div class="face back">
+            <h3>Gimli</h3>
+            <p>Gimlivel először Völgyzugolyban találkozunk, Elrond Tanácsán, amin apjával, Glóinnal (Bilbó egykori
+              útitársával) együtt vett részt. Gimli és Glóin a Magányos Hegyről hoztak hírt..
+            </p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Gimli#%C3%89lete" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+      </sec>
+      <sec id="sc_three">
+        <h3 id="hp">Harry Potter</h3>
+        <img id=dbdimg src="img/hp.jpg" alt="Harry Potter">
+        <p>Egy éjszaka a bölcs, öreg mágus, Albus Dumbledore professzor, a Roxfort nevű varázslóiskola igazgatója,
+          valamint kolléganője, az időnként macskaalakot öltő Minerva McGalagony professzor találkoznak a szélsőségesen
+          mágiaellenes Dursley család Privet Drive 4. szám alatt található házánál. Ugyanis Petunia Dursley varázserővel
+          megáldott nővérét, Lily Evanst és férjét, James Pottert meggyilkolta a rettegett feketemágus, Voldemort.
+          Meglepetésére azonban fiúkkal, Harryvel képtelen volt végezni, így a gyerek megúszta egy sebhellyel,
+          Voldemortra
+          pedig visszahullott a halálos átok, és elvesztette testét. A csecsemő Harryt Rubeus Hagrid, a Roxfort óriás
+          vadőre mentette ki a ház romjai közül, és hozta el a Privet Drive-ra. Dumbledore levélben tájékoztatja
+          Dursleyéket a történtekről, és azt kéri, hogy mivel ők az egyetlen rokonai a fiúnak, viseljék gondját
+          unokaöccsüknek.
+        </p>
+
+        <div class="card">
+          <div class="face front">
+            <img src="img/harry.jpg" alt="">
+            <h3>Harry Potter</h3>
+          </div>
+          <div class="face back">
+            <h3>Harry Potter</h3>
+            <p>Harry Potter máguscsaládból származó, ún. „félvér” varázsló, szülei James Potter (aranyvérű varázsló)
+              Lily
+              Evans (mugli születésű boszorkány). Mindketten egy nagyhatalmú sötét varázsló, Voldemort keze által haltak
+              meg.</p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Harry_Potter_(szerepl%C5%91)" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/ron.jpg" alt="">
+            <h3>Ron Weasley</h3>
+          </div>
+          <div class="face back">
+            <h3>Ron Weasley</h3>
+            <p>Ron a Weasley család hatodik gyermekeként látta meg a napvilágot. Kiskorában sokat rendetlenkedtek vele
+              ikerbátyjai, egy ilyen esetből származik pókiszonya is: Fred pókká változtatta a plüssmackóját.</p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Ron_Weasley" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/hermione.jpg" alt="">
+            <h3>Hermione Granger</h3>
+          </div>
+          <div class="face back">
+            <h3>Hermione Granger</h3>
+            <p>Hermione a Roxfort Boszorkány- és Varázslóképző Szakiskola diákja, a Griffendél ház tagja, az iskola
+              egyik
+              éltanulója. Ő a sorozat női főszereplője, Harry Potter és Ron Weasley mellett ő a harmadik legfontosabb
+              szereplő.
+            </p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/Hermione_Granger" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+      </sec>
+      <sec id="sc_four">
+        <h3 id="jw">John Wick</h3>
+        <img id=dbdimg src="img/jw.jpg" alt="John Wick">
+        <p>Egy John Wick (Keanu Reeves) nevű férfinak nemrég hunyt el rákbeteg felesége, Helen (Bridget Moynahan). A nő
+          hátrahagyott egy ajándékot a férjének, egy Daisy nevű kiskutyát, valamint egy levelet, melyben elmondja, hogy
+          Daisy segít feldolgozni a halálát. Kezdetben Daisy közömbös, végül a kiskutya kötődik Johnhoz, amint egyik nap
+          elviszi kocsikázni a 69-es évjáratú Mustangjával. benzinkútnál egy három tagú orosz bandával találkoznak.
+          VEzetőjük Joszef Taraszov (Alfie Allen), aki ragaszkodik a kocsija megvételéhez, de John nem hajlandó neki
+          eladni, ezért Joszef egy rosszindulatú megjegyzést tesz a távozása előtt. A három férfi követi Johnt az
+          otthonáig és késő éjszaka betörnek hozzá, majd megtámadják Johnt; végignézetik vele, hogy hogyan ölik meg
+          Daisyt, ezt követően ellopják a kocsiját.</p>
+
+
+        <div class="card">
+          <div class="face front">
+            <img src="img/john.jpeg" alt="">
+            <h3>John wick</h3>
+          </div>
+          <div class="face back">
+            <h3>John wick</h3>
+            <p>John Wick, egy visszavonult bérgyilkos áll, aki bosszút esküszik az ellopott autója és a meggyilkolt
+              kiskutyája miatt, amit még a rákban elhunyt felesége hagyott rá a halála előtt</p>
+            <div class="link">
+              <a href="https://hu.wikipedia.org/wiki/John_Wick_(film)#" target="_blank">Részletesebben</a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/winston.jpg" alt="">
+            <h3>Winston Scott</h3>
+          </div>
+          <div class="face back">
+            <h3>Winston Scott</h3>
+            <p>Winston Scott a New York Continental Hotel jelenlegi tulajdonosa és menedzsere, egy olyan létesítmény,
+              amely semleges területként és biztonságos zónaként működik a bűnözők és bérgyilkosok számára.</p>
+            <div class="link">
+              <a href="https://johnwick.fandom.com/wiki/Winston_Scott" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/king.jpg" alt="">
+            <h3>A Bowery király</h3>
+          </div>
+          <div class="face back">
+            <h3>A Bowery király</h3>
+            <p>A Bowery King a The Soup Kitchen, egy hajléktalanszállónak álcázott New York-i alvilági hírszerzési
+              hálózat
+              erőteljes vezetője. A Bowery King katonák és kémek hálózatát irányítja..
+
+            </p>
+            <div class="link">
+              <a href="https://johnwick.fandom.com/wiki/The_Bowery_King" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+      </sec>
+      <sec id="sc_five">
+        <h3 id="sq">Kingsman</h3>
+        <img id=dbdimg src="img/sq.jpg" alt="Kingsman">
+        <p>Tökit kicsapták az iskolából, munka nélkül tengődik, az anyja lakásában lakik és zűrös életet él. Amikor
+          autólopásért lecsukják, felhívja az apja halála után kapott érmén lévő telefonszámot. Ki is hozza őt a sittről
+          a kifogástalan modorú, angolosan elegáns kém, Harry Hart, akinek annak idején a fiú apja mentette meg az
+          életét. Harry megütközik a srác életmódján, ám lenyűgözi a fiú tehetsége és az intelligenciája, ezért
+          felajánlja neki, hogy jelentkezhet a csapatába, ahol igazi James Bondot faragnak belőle.</p>
+        <div class="card">
+          <div class="face front">
+            <img src="img/harley.jpg" alt="">
+            <h3>Gary Unwin</h3>
+          </div>
+          <div class="face back">
+            <h3>Gary Unwin</h3>
+            <p>Gary Unwin Lee és Michelle Unwin gyermekeként 1992. június 3-án született Dél-Londonban. Apja kémnek
+              készült a szigorúan titkos, földalatti szervezet, a Kingsman számára.</p>
+            <div class="link">
+              <a href="https://kingsman.fandom.com/wiki/Gary_%22Eggsy%22_Unwin#Early_Life"
+                target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/dead.jpg" alt="">
+            <h3>Harry Hart</h3>
+          </div>
+          <div class="face back">
+            <h3>Harry Hart</h3>
+            <p>Harry korai életéről keveset tudni, bár a Kingsman: The Golden Circle-ben elhangzott, hogy lepkeápoló
+              szeretne lenni, ehelyett a brit hadsereg tisztét választotta. Miután egy ideig katonai szolgálatot
+              teljesített, beszervezték a Kingsmanbe.</p>
+            <div class="link">
+              <a href="https://kingsman.fandom.com/wiki/Harry_Hart" target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img src="img/joker.jpg" alt="">
+            <h3>Merlin</h3>
+          </div>
+          <div class="face back">
+            <h3>Merlin</h3>
+            <p>1997-ben Merlin és Galahad kiképzési küldetésen volt a Közel-Keleten Lee Unwin és James Spencer
+              gyakornokokkal (a Kingsman Ügynökség Lancelot posztjára jelöltek). Miközben egy katonát tartottak fogva
+              információért, gránáttűt húzott, Lee pedig feláldozta magát..
+            </p>
+            <div class="link">
+              <a href="https://kingsman.fandom.com/wiki/Merlin#Kingsman:_The_Secret_Service"
+                target="_blank">Részletesebben</a>
+            </div>
+          </div>
+        </div>
+      </sec>
+    </section>
+  </div>
+
+
+  </div>
+  <footer>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26432.433958227946!2d-118.32647809999999!3d34.0937508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf07045279bf%3A0xf67a9a6797bdfae4!2sHollywood%2C%20Los%20Angeles%2C%20Kalifornia%2C%20Egyes%C3%BClt%20%C3%81llamok!5e0!3m2!1shu!2shu!4v1699043264846!5m2!1shu!2shu"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+  </div>
+</body>
+
+</html>
+
+
