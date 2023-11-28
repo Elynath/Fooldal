@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -338,11 +339,21 @@ img#dbdimg{
     margin-left: 30px;
 }
 
+footer iframe{
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display:flex;
+}
 
 @media screen and (max-width:1024px) {
     .content {
         width: 100%;
-        background-color: #FFF;
+        background-color: #212c58;
     }
 
     img {
@@ -370,13 +381,58 @@ img#dbdimg{
     
 }
 
-footer iframe{
-    border-radius: 20px;
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    padding: 0 auto;
-    position: relative;
-    overflow: hidden;
-    display:flex;
+@media screen and (max-width: 768px) {
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 100px; 
+    }
+
+    nav, aside {
+        flex-basis: 100%;
+    }
+
+    #name, #e-mail, #telefon {
+        width: 100%;
+    }
+
+    input#name {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    video {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    p{
+        text-align: justify;
+        width: 100%;
+    }
+
+    p#video {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer iframe {
+        margin: 0;
+    }
 }
