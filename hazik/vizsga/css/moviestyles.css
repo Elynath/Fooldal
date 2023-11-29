@@ -396,6 +396,10 @@ footer iframe{
         flex-basis: 100%;
         
     }
+
+    aside {
+        min-height: 100vh;
+    }
     #name, #e-mail, #telefon {
         width: 100%;
     }
