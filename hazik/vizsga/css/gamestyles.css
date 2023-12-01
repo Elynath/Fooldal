@@ -302,7 +302,9 @@ video{
     float: left;
     clear: both;
     position: relative;
-    margin-left: 140px
+    margin-left: 140px;
+    width: 80%;
+    justify-items: center;
 }
 
 img {
@@ -394,6 +396,7 @@ footer iframe{
 
     nav, aside, a {
         flex-basis: 100%;
+
         
     }
 
@@ -423,7 +426,7 @@ footer iframe{
     }
 
     img {
-        width: 100%;
+        width: 80%;
         margin: 10px 0;
     }
     p{
