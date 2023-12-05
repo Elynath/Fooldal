@@ -430,19 +430,22 @@ footer iframe{
     }
 
     .card {
-        width: 80%;
+        width: 100%;
         margin-left: 0;
+        justify-content: center;
         
     }
 
     video.video {
         margin-left: 0;
-        width: 80%;
+        width: 100%;
+        justify-content: center;
     }
 
     img {
         width: 80%;
         margin: 10px 0;
+        
     }
     p{
         text-align: justify;
