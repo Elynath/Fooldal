@@ -435,6 +435,14 @@ footer iframe{
         justify-content: center;
         
     }
+    div.face.front img {
+        border-radius: 0;
+        float: right;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
 
     video.video {
         margin-left: 0;
