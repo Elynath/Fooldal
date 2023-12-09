@@ -447,6 +447,14 @@ footer iframe{
         margin: 10px 0;
         
     }
+    div.face.front img {
+        border-radius: 0;
+        float: right;
+        clear: both;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
     p{
         text-align: justify;
         width: 100%;
