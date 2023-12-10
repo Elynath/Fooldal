@@ -793,7 +793,10 @@
   </a>
 
   <script>
-    alert ("Üdvözölek, ha telefonról nézed a weboldalt, akkor a további infórmációkért kattints a képekre!")
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+    
+    alert ("Üdvözöllek, A tartalom megjelenítéséhez kattints a képekre!")
+  }
   </script>
 </body>
 
